@@ -19,9 +19,9 @@ variable "availability_zone" {
     type = string
     default = "ap-south-1a"
 }
-variable "private_ips" {
-    type = list
-    default = ["10.0.1.50"]
+# variable "private_ips" {
+#     type = list
+#     default = ["10.0.1.50"]
 }
 variable "ami" {
     type = string

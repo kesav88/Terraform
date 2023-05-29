@@ -87,7 +87,7 @@ resource "aws_security_group" "my-sg-1" {
 #step-7 : create network interface with an IP in subnet created in step-4
 resource "aws_network_interface" "my-ni" {
   subnet_id       = aws_subnet.my-subnet.id
-  private_ips     = var.private_ips[0]
+  private_ips     = ["10.0.1.50"]
   security_groups = [aws_security_group.my-sg-1.id]
 
 
